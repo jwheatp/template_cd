@@ -1,0 +1,292 @@
+/*
+*
+*    FEUILLE DE STYLE
+*    CSS
+*
+*/
+
+
+
+/*
+
+**** Elements de base du site
+
+*/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color:#f7f7f7;
+	color:white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 8px;
+}
+
+/*
+
+**** Menu du site
+
+*/
+header {
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background-color:#A44823;
+	height: 75px;
+}
+
+header img {
+	height:80px;
+}
+
+header .logo{
+	padding:20px;
+}
+
+.btn {
+	display:flex;
+	border:1px solid white;
+	padding:10px 20px;
+	border-radius:4px;
+	color:white;
+	text-decoration:none;
+}
+
+/*
+
+**** Ecran d'accueil avec la citation
+
+*/
+
+.splashscreen {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	text-align: center;
+	margin-top:5px;
+	height:80vh;
+	background-image:url('http://cdn.coding-days.com/upload/c8b879279b12c6f4141cb40a1ae4ebd5.jpeg');
+	background-size:cover;
+	background-position:top;
+	background-attachment:fixed;
+}
+
+.splashscreen h1 {
+	font-size:40px;
+	color:white;
+	margin: 200px;
+	text-shadow: 2px 2px #403d3d;
+}
+
+/*
+
+**** Section du burger avec sa description
+
+*/
+
+.editor {
+	margin-top:5px;
+	padding:20px;
+	display:flex;
+	justify-content:center;
+	background-color:#3e3938;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 400px;
+}
+
+.description > h1 {
+	color: #aacb92;
+	font-size: 40px;
+}
+
+/* Le bloc du burger */
+
+.burger {
+  width: 400px;
+	margin: 20px 50px 20px 0;
+	text-align: center;
+}
+
+.burger > div {
+  margin: 0 auto;
+}
+
+/* Les ingrédients du burger */
+
+.pain-dessus {
+	background: #dabe75;
+  height: 80px;
+  width: 60%;
+	border-top: dotted 8px #988c6d;
+  border-radius: 60px 60px 20px 20px;
+  border-bottom: solid 10px #F2E0B0;
+}
+
+.fromage {
+  height: 12px;
+  width: 65%;
+  background: #E4A531;
+	border-radius: 20px 0;
+  border-bottom: solid 4px #c3820a;
+}
+
+.tomate {
+  height: 15px;
+  width: 50%;
+  background-color: #ea2f00;
+  border-bottom: solid 4px #c12700;
+}
+
+.viande {
+	height: 25px;
+	width: 60%;
+	background: linear-gradient(#773a23, #a56a54);
+	border-radius: 10px;
+}
+
+.salade {
+  height: 15px;
+  width: 70%;
+	border-radius: 70% 0;
+  background: #C3C74F;
+  border-bottom: solid 10px #a8ab57;
+}
+
+.oignon {
+  width: 40%;
+  background-color: #e17cf9;
+	height: 10px;
+}
+
+.pain-dessous {
+	background: #dabe75;
+  height: 30px;
+  width: 60%;
+  border-radius: 60px 60px 20px 20px;
+  border-top: solid 10px #F2E0B0;
+  border-radius: 20px 20px 40px 40px;
+}
+
+.assiette {
+  height: 10px;
+  width: 90%;
+  background: #717171;
+  border-radius: 10px 10px 100px 100px;
+}
+
+/*
+
+**** Section Outils en bas de la page
+
+*/
+
+.tools {
+	margin-top: 5px;
+	display:flex;
+	background-color:#819871;
+	height:40vh;
+	color:white;
+}
+
+.tools > article {
+	flex:1;
+	padding:20px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.tools h4 {
+	border:2px solid white;
+	border-radius:50%;
+	height:40px;
+	width:40px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:20px;
+}
+
+.tools p {
+	text-align:center;
+}
+
+.plats {
+  background-color: #f7f7f7;
+	flex-wrap:wrap;
+	justify-content: center;
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+
+.plats > article {
+  width: calc(25% - 40px);
+	min-width: 200px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: white;
+}
+
+.plats > div > article > header > h4 {
+    text-align: center;
+    font-size: 1.9em;
+    margin:10px;
+}
+
+.plats img {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+
+.plats p {
+  text-align: justify;
+}
+
+.plats a {
+  text-decoration: none;
+  color: white;
+  background: #53A1F2;
+  padding: 10px 20px;
+  border-radius: 3px;
+  display: block;
+  text-align: center;
+  transition: .4s all ease;
+  border: 1px solid #53A1F2;
+}
+
+.plats a:hover {
+  color: #53A1F2;
+  border: 1px solid #53A1F2;
+  background: white;
+  transition: .4s all ease;
+}
+
+.plats footer {
+  margin: 10px;
+}
+
+.plats footer span {
+  font-size: 0.8rem;
+  display: inline-block;
+}
